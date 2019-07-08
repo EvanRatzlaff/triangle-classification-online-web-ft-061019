@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
 attr_accessor :length1, :length2, :length3
   def initialize(length1, length2, length3)
@@ -22,6 +23,7 @@ attr_accessor :length1, :length2, :length3
   
   def triangle 
     length1.positive? && length2.positive? && length3.positive?
+binding.pry
   end 
   
   def triangle2 
