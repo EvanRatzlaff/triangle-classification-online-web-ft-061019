@@ -18,7 +18,7 @@ attr_accessor :length1, :length2, :length3
     else 
       :isosceles
     end 
-    binding.pry
+   # binding.pry
   end
   
   def validate_triangle 
