@@ -22,10 +22,7 @@ attr_accessor :length1, :length2, :length3
   end
   
   def validate_triangle 
-    length1.positive? && length2.positive? && length3.positive?
-     if (length1 <= 0) || (length2 <=0) || (length3 <=0)
-     raise TriangleError
-    end 
+    
   end 
 
   # def triangle2 
