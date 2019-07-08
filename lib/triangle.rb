@@ -25,9 +25,9 @@ attr_accessor :length1, :length2, :length3
     length1.positive? && length2.positive? && length3.positive?
   end 
 
-  def triangle2 
-    length1 + length2 > length3 && length1 + length3 > length2 && length2 + length3 > length1
-  end 
+  # def triangle2 
+  #   length1 + length2 > length3 && length1 + length3 > length2 && length2 + length3 > length1
+  # end 
   class TriangleError < StandardError 
   
   end
