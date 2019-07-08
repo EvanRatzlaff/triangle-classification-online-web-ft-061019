@@ -8,9 +8,8 @@ attr_accessor :length1, :length2, :length3
   end
 
   def kind
-    if (length1 <= 0) || (length2 <=0) || (length3 <=0)
-     # raise TriangleError
-     
+  
+     validate_triangle
     
     if length1 == length2 && length2 == length3 && length1 == length3
       :equilateral
@@ -22,7 +21,7 @@ attr_accessor :length1, :length2, :length3
     binding.pry
   end
   
-  def triangle 
+  def validate_triangle 
     length1.positive? && length2.positive? && length3.positive?
   end 
 
