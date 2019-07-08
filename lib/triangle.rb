@@ -31,7 +31,5 @@ attr_accessor :length1, :length2, :length3
   
   end
 end
-a = Triangle.new(1,1,1)
-a.kind
 
 
