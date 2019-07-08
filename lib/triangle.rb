@@ -22,8 +22,8 @@ attr_accessor :length1, :length2, :length3
   end
   
   def validate_triangle 
-    real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
-    [a, b, c].each { |s| real_triangle << false if s <= 0 }
+    real_triangle = [(length1 + length2 > length3), (length1 + length3 > length2), (length2 + length3 > length1)]
+    [length1, length2, length3].each { |s| real_triangle << false if s <= 0 }
     raise TriangleError if real_triangle.include?(false)
 
   end 
