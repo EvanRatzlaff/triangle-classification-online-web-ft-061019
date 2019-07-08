@@ -19,6 +19,7 @@ attr_accessor :length1, :length2, :length3
     else 
       :isosceles
     end 
+    binding.pry
   end
   
   def triangle 
@@ -27,7 +28,6 @@ attr_accessor :length1, :length2, :length3
 
   def triangle2 
     length1 + length2 > length3 && length1 + length3 > length2 && length2 + length3 > length1
-binding.pry    
   end 
   class TriangleError < StandardError 
   
